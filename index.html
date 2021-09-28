@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Music Player</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+    </head>
+    <body>
+        <div class = "main">
+
+            <div class = "top_bar">
+            </div>
+
+            <div class="playing_part">
+                <div class="img">
+                    <img src="Images/large.jpg" alt="img">
+                </div>
+            </div>
+
+            <div class="control_part">
+                <div class="song_title">
+                    <p id = "title">Passengers</p>
+                    <p id = "artist">Chromonicci</p>
+                </div>
+
+                <div class="control_buttons">
+                    <div id="range_slider">
+                        <input type="range" min="0" max="100" id="slider" value="50" oninput = "volControl()">
+                    </div>
+
+                    <div class="main_btns">
+                        <button id="play_btn" onclick = "playSong()"><i class='bx bx-play' id="play"></i></button>
+                        <audio id="song" src="Musics/01 Chromonicci - Passengers.mp3"></audio>
+                        <button id="pause" onclick = "pauseSong()"><i class='bx bx-pause' ></i></button>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
